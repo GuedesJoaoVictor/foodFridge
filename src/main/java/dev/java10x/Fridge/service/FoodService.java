@@ -17,6 +17,10 @@ public class FoodService {
     //Listar todos
     public List<Food> getAll() { return foodRepository.findAll(); }
 
+    //Criar item
     public Food save(Food food) { return foodRepository.save(food); }
+
+    //Deletar um item
+    public void deleteById(Long id) { foodRepository.deleteById(id); }
 
 }
